@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+  <!-- Wizard Hat -->
+  <path d="M100 15 L130 85 L70 85 Z" fill="none"/>
+  <!-- Stars on hat -->
+  <circle cx="90" cy="45" r="3" fill="currentColor"/>
+  <circle cx="105" cy="55" r="2.5" fill="currentColor"/>
+  <circle cx="95" cy="68" r="2" fill="currentColor"/>
+  <circle cx="110" cy="40" r="2" fill="currentColor"/>
+
+  <!-- Face -->
+  <circle cx="100" cy="110" r="30" fill="none"/>
+
+  <!-- Eyes (happy/closed) -->
+  <path d="M88 105 Q92 100 96 105" fill="none"/>
+  <path d="M104 105 Q108 100 112 105" fill="none"/>
+
+  <!-- Mustache -->
+  <path d="M85 120 Q92 125 100 118 Q108 125 115 120" fill="none"/>
+
+  <!-- Body -->
+  <path d="M75 140 L70 180 L130 180 L125 140" fill="none"/>
+
+  <!-- Arms -->
+  <path d="M70 150 L45 140 L40 145" fill="none"/>
+  <path d="M130 150 L155 130 L160 125" fill="none"/>
+
+  <!-- Hand waving -->
+  <circle cx="160" cy="125" r="8" fill="none"/>
+
+  <!-- Legs/feet -->
+  <path d="M85 180 L80 195 L95 195" fill="none"/>
+  <path d="M115 180 L120 195 L105 195" fill="none"/>
+
+  <!-- Sparkles around -->
+  <path d="M40 60 L45 55 L50 60 L45 65 Z" fill="currentColor"/>
+  <path d="M160 70 L165 65 L170 70 L165 75 Z" fill="currentColor"/>
+  <path d="M35 100 L38 97 L41 100 L38 103 Z" fill="currentColor"/>
+</svg>

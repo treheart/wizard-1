@@ -1,0 +1,110 @@
+{
+  "_instructions": "Edit the text between quotes. Use {name} where you want the user's name to appear. Do not change the keys or remove punctuation.",
+
+  "labels": {
+    "bottleneckType": "Your Invisible Wall",
+    "capabilityProfile": "Your Capability Profile",
+    "basedOnAnswers": "Based on your answers, {name}:",
+    "ctaHeading": "Ready to break through, {name}?",
+    "ctaSubheading": "Get the system designed to remove your invisible wall",
+    "emailPlaceholder": "Enter your email",
+    "getLearningPathButton": "See The Fix",
+    "loadingButton": "Loading...",
+    "newsletterLink": "No thanks, just send me the newsletter",
+    "subscribingButton": "Subscribing...",
+    "suspenseFallback": "Analyzing your answers..."
+  },
+
+  "pathResults": {
+    "A": {
+      "title": "Skill Uncertainty",
+      "subtitle": "The #1 thing keeping you stuck below $3k/mo",
+      "description": "You're not lazy or incapable — you just don't trust your fundamentals yet. When your foundation is shaky, every project feels risky and every client conversation triggers doubt. Confidence doesn't come from motivation, it comes from clear structure and repeatable execution.",
+      "tags": ["#Beginner", "#SkillBuilding", "#Confidence", "#Structure"],
+      "insights": [
+        "Your foundation feels shaky, making every project feel risky",
+        "Client conversations trigger doubt instead of excitement",
+        "You need clear structure, not more random tutorials",
+        "Confidence comes from repeatable execution, not motivation"
+      ]
+    },
+    "B": {
+      "title": "No Foundation",
+      "subtitle": "The #1 thing holding your startup back",
+      "description": "You have an idea with real potential but no way to make it tangible. Without a clear brand, positioning, and visual identity, you can't communicate what you're building. Every pitch, every conversation, every landing page feels like starting from zero.",
+      "tags": ["#Founder", "#Startup", "#Branding", "#Identity"],
+      "insights": [
+        "Your idea has potential but no tangible form yet",
+        "Without clear positioning, you can't communicate your vision",
+        "Every pitch feels like starting from zero",
+        "You need a credible, premium foundation to build on"
+      ]
+    },
+    "C": {
+      "title": "Asset Fragmentation",
+      "subtitle": "The #1 thing slowing down your projects",
+      "description": "You're juggling stock image sites, icon libraries, Figma community files, and generic AI tools. Every project means searching five different platforms, and half of what you find doesn't even fit. This is unbillable time that adds up fast.",
+      "tags": ["#Designer", "#Assets", "#Efficiency", "#Production"],
+      "insights": [
+        "You're juggling multiple platforms for every project",
+        "Half of what you find doesn't fit your needs",
+        "Unbillable asset hunting time adds up fast",
+        "You need one source for production-ready assets"
+      ]
+    }
+  },
+
+  "personalizedInsights": {
+    "A": {
+      "Q1A": {
+        "just_starting": "You're at the starting line — the right structure will accelerate your path to income.",
+        "some_traction": "You have traction but need consistency — a clear system will lock in your progress.",
+        "unsure_growth": "You're earning but feel stuck — you need clarity on how to level up."
+      },
+      "Q2A": {
+        "not_confident": "Skill uncertainty is your main blocker — structured learning will build real confidence.",
+        "no_focus": "Scattered focus is draining your energy — you need a clear learning sequence.",
+        "overwhelmed": "Information chaos is keeping you stuck — you need one path, not a hundred."
+      },
+      "Q3A": {
+        "scattered": "Jumping between tutorials builds confusion, not skills. You need a curriculum.",
+        "consume_no_apply": "Consumption without application is wasted time. You need structured practice.",
+        "second_guess": "Second-guessing kills momentum. Clear fundamentals will end the doubt."
+      }
+    },
+    "B": {
+      "Q1B": {
+        "idea_only": "You have an idea but nothing built yet — you need a foundation to make it real.",
+        "amateur_brand": "Your product is good but your brand undersells it — perception gap is costing you.",
+        "preparing_launch": "You're ready for the big stage — your brand needs to match your ambition."
+      },
+      "Q2B": {
+        "dont_know_start": "Not knowing where to start is normal — you need expert guidance to build right.",
+        "brand_mismatch": "Your brand doesn't match your ambition — this gap costs you opportunities daily.",
+        "need_premium": "Premium presence isn't vanity — it's a business lever for investors and customers."
+      },
+      "Q3B": {
+        "brand_identity": "You need a complete brand identity to communicate what you're building.",
+        "converting_website": "A converting website is critical to turn interest into customers.",
+        "full_package": "The full package — strategy, brand, product design, website — is your fastest path."
+      }
+    },
+    "C": {
+      "Q1C": {
+        "hunting_assets": "Asset hunting is killing your productivity — you need a single source of truth.",
+        "ai_unusable": "Generic AI outputs waste more time than they save. You need design-specific AI.",
+        "inconsistent_visuals": "Visual inconsistency makes projects take twice as long."
+      },
+      "Q2C": {
+        "platform_hopping": "Platform hopping is unbillable time — consolidation is the answer.",
+        "tweaking_ai": "Tweaking generic AI outputs is a time trap. Purpose-built tools work faster.",
+        "redoing_assets": "Re-doing assets that don't match is a symptom of fragmented workflows."
+      },
+      "Q3C": {
+        "one_place": "One place for all assets would transform your workflow.",
+        "web_design_ai": "AI built specifically for web design eliminates the prompt engineering struggle.",
+        "faster_path": "A faster path to production-ready visuals means more billable time."
+      }
+    }
+  }
+}

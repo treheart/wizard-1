@@ -1,0 +1,176 @@
+{
+  "_instructions": "Edit the text between quotes. Use {name} where you want the user's name to appear. Do not change the keys or remove punctuation.",
+
+  "loading": {
+    "messages": [
+      "Analyzing your responses...",
+      "Identifying your invisible wall...",
+      "Building your personalized fix...",
+      "Curating the right solution...",
+      "Finalizing your path forward..."
+    ],
+    "suspenseFallback": "Loading..."
+  },
+
+  "timer": {
+    "label": "Special offer expires in:",
+    "button": "Get Started"
+  },
+
+  "labels": {
+    "yourFocus": "Your focus",
+    "yourGoal": "Your goal",
+    "newOffer": "The Fix",
+    "whatsIncluded": "What's included:",
+    "whatYoullAchieve": "What you'll achieve:",
+    "basedOnQuizResults": "Based on your quiz results:",
+    "yourBottleneck": "Your invisible wall:",
+    "testimonialsHeading": "Trusted by hundreds of professionals",
+    "footer": "Powered by Adrien Ninet"
+  },
+
+  "pricing": {
+    "amount": "$129",
+    "subtitle": "One-time payment, instant access.",
+    "getYourTitle": "Get {offerTitle}",
+    "bonuses": [
+      "Private community access",
+      "Lifetime updates included"
+    ],
+    "notReadyText": "Not ready?",
+    "notReadyLink": "Join our free newsletter instead."
+  },
+
+  "finalCta": {
+    "heading": "Ready to break through, {name}?",
+    "subheading": "Get instant access and start seeing results within weeks.",
+    "button": "Get Started",
+    "notReadyLink": "Not ready? Join our free newsletter instead."
+  },
+
+  "paths": {
+    "A": {
+      "focus": "Skill Building",
+      "goal": "Premium Websites with AI",
+      "headline": "Your Path to Premium Websites",
+      "description": "{name}, your quiz revealed exactly what's holding you back. Logiaweb is the step-by-step course designed to fix it.",
+      "offerTitle": "Logiaweb",
+      "offerDescription": "A step-by-step course that teaches you to build premium websites using AI tools and no-code platforms.",
+      "image": "/emerging_wizard,.png",
+      "pricing": {
+        "amount": "$129",
+        "subtitle": "One-time payment, instant access.",
+        "buttonText": "Start learning for $129"
+      },
+      "included": [
+        { "title": "Video Lessons", "description": "Step-by-step tutorials from zero to premium websites" },
+        { "title": "Templates & Prompts", "description": "Ready-to-use assets that accelerate your learning" },
+        { "title": "Private Community", "description": "Connect with other designers on the same path" }
+      ],
+      "achievements": [
+        "Build premium websites confidently",
+        "Use AI tools effectively",
+        "Replace confusion with clarity"
+      ],
+      "testimonials": [
+        {
+          "quote": "I went from scattered tutorials to actually building premium sites. The structure made all the difference.",
+          "name": "Sarah Mitchell",
+          "role": "Web Designer"
+        },
+        {
+          "quote": "Finally stopped second-guessing my work. The fundamentals are rock solid now.",
+          "name": "Marcus Chen",
+          "role": "Freelance Designer"
+        },
+        {
+          "quote": "The AI prompts alone saved me weeks of trial and error. Highly recommend.",
+          "name": "Emma Rodriguez",
+          "role": "No-Code Designer"
+        }
+      ]
+    },
+    "B": {
+      "focus": "Brand Foundation",
+      "goal": "Premium Startup Presence",
+      "headline": "Your Brand Transformation",
+      "description": "{name}, your quiz revealed exactly what's holding your startup back. Klime Studio is the design partnership to fix it.",
+      "offerTitle": "Klime Studio",
+      "offerDescription": "A design partnership for founders who want to build the brands of tomorrow. We take you from idea to fully-formed brand.",
+      "image": "/scaling_wizard.png",
+      "pricing": {
+        "amount": "Custom",
+        "subtitle": "Tailored to your startup's needs.",
+        "buttonText": "Book a 15-minute call"
+      },
+      "included": [
+        { "title": "Brand Strategy", "description": "Clear positioning that communicates your vision" },
+        { "title": "Visual Identity", "description": "Premium brand identity that matches your ambition" },
+        { "title": "Website & Product Design", "description": "Converting assets that attract investors and customers" }
+      ],
+      "achievements": [
+        "Communicate your vision clearly",
+        "Attract investors and customers",
+        "Build a scalable foundation"
+      ],
+      "testimonials": [
+        {
+          "quote": "Klime transformed our amateur brand into something investors take seriously. Worth every penny.",
+          "name": "David Park",
+          "role": "Startup Founder"
+        },
+        {
+          "quote": "We closed our seed round 2 months after the rebrand. The perception shift was immediate.",
+          "name": "Lisa Thompson",
+          "role": "Tech Founder"
+        },
+        {
+          "quote": "Finally have a brand that matches what we're building. Every pitch feels different now.",
+          "name": "James Wilson",
+          "role": "SaaS Founder"
+        }
+      ]
+    },
+    "C": {
+      "focus": "Asset Generation",
+      "goal": "Production-Ready Visuals",
+      "headline": "Your Asset Generation Engine",
+      "description": "{name}, your quiz revealed exactly what's slowing you down. Limora is the AI-powered asset engine designed to fix it.",
+      "offerTitle": "Limora",
+      "offerDescription": "An AI-powered asset engine built specifically for web designers. Generate hero backgrounds, icons, illustrations, product photos, and mockups from one single place.",
+      "image": "/creator_wizard.png",
+      "pricing": {
+        "amount": "$18/mo",
+        "subtitle": "Cancel anytime.",
+        "buttonText": "Start creating for $18/mo"
+      },
+      "included": [
+        { "title": "Hero Backgrounds", "description": "Generate custom backgrounds that fit your design" },
+        { "title": "Icons & Illustrations", "description": "On-brand assets without platform hopping" },
+        { "title": "Product Photos & Mockups", "description": "Production-ready visuals in minutes" }
+      ],
+      "achievements": [
+        "Stop platform hopping",
+        "Generate on-brand assets fast",
+        "Spend more time designing"
+      ],
+      "testimonials": [
+        {
+          "quote": "Cut my asset sourcing time by 80%. Everything I need is in one place now.",
+          "name": "Alex Rivera",
+          "role": "Web Designer"
+        },
+        {
+          "quote": "No more fighting with generic AI tools. Limora just works for web design.",
+          "name": "Nina Patel",
+          "role": "UI Designer"
+        },
+        {
+          "quote": "Finally, AI that understands what designers actually need. Game changer.",
+          "name": "Chris Morgan",
+          "role": "Creative Director"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,109 @@
+{
+  "_instructions": "Edit the text between quotes. Use {name} where you want the user's name to appear. Do not change the keys (words before colons) or remove any punctuation.",
+
+  "nameInput": {
+    "heading": "Before we start — what should we call you?",
+    "label": "First name:",
+    "placeholder": "Enter your first name",
+    "button": "Find My Invisible Wall"
+  },
+
+  "segmentSplitter": {
+    "question": "How is your business set up right now, {name}?",
+    "options": [
+      {
+        "label": "I'm a beginner (<5 Projects)",
+        "value": "A"
+      },
+      {
+        "label": "I'm a solo operator (Founder with startup idea)",
+        "value": "B"
+      },
+      {
+        "label": "I'm an experienced Designer (5+ Projects)",
+        "value": "C"
+      }
+    ]
+  },
+
+  "pathA": {
+    "Q1A": {
+      "question": "Where are you currently stuck?",
+      "options": [
+        { "label": "I'm just starting ($0–$1k/mo)", "value": "just_starting" },
+        { "label": "I have some traction ($1k–$3k/mo)", "value": "some_traction" },
+        { "label": "I'm earning, but feel unsure how to grow ($3k–$8k/mo)", "value": "unsure_growth" }
+      ]
+    },
+    "Q2A": {
+      "question": "What actually slows you down most?",
+      "options": [
+        { "label": "I don't feel confident in my skills yet", "value": "not_confident" },
+        { "label": "I don't know what to focus on or learn next", "value": "no_focus" },
+        { "label": "I feel overwhelmed by conflicting advice", "value": "overwhelmed" }
+      ]
+    },
+    "Q3A": {
+      "question": "How does learning usually feel for you?",
+      "options": [
+        { "label": "Scattered — I jump between tutorials", "value": "scattered" },
+        { "label": "I consume a lot, but don't apply enough", "value": "consume_no_apply" },
+        { "label": "I second guess my work constantly", "value": "second_guess" }
+      ]
+    }
+  },
+
+  "pathB": {
+    "Q1B": {
+      "question": "What stage is your startup or brand?",
+      "options": [
+        { "label": "I have an idea but haven't built anything yet", "value": "idea_only" },
+        { "label": "I have a product/MVP but my brand feels amateur", "value": "amateur_brand" },
+        { "label": "I'm preparing for fundraising or a major launch", "value": "preparing_launch" }
+      ]
+    },
+    "Q2B": {
+      "question": "What's your biggest brand/design challenge?",
+      "options": [
+        { "label": "I don't know where to start with branding", "value": "dont_know_start" },
+        { "label": "My current brand doesn't match my ambition", "value": "brand_mismatch" },
+        { "label": "I need a premium presence to attract investors or customers", "value": "need_premium" }
+      ]
+    },
+    "Q3B": {
+      "question": "What do you need most right now?",
+      "options": [
+        { "label": "Complete brand identity from scratch", "value": "brand_identity" },
+        { "label": "Website that converts visitors into customers", "value": "converting_website" },
+        { "label": "Full package: strategy, brand, product design, and website", "value": "full_package" }
+      ]
+    }
+  },
+
+  "pathC": {
+    "Q1C": {
+      "question": "What slows down your design projects most?",
+      "options": [
+        { "label": "Hunting for the right stock images, icons, or illustrations", "value": "hunting_assets" },
+        { "label": "Getting AI tools to produce usable, on-brand results", "value": "ai_unusable" },
+        { "label": "Maintaining visual consistency across projects", "value": "inconsistent_visuals" }
+      ]
+    },
+    "Q2C": {
+      "question": "Where does asset creation drain your time?",
+      "options": [
+        { "label": "Searching across multiple platforms for assets", "value": "platform_hopping" },
+        { "label": "Tweaking generic AI outputs to fit my designs", "value": "tweaking_ai" },
+        { "label": "Re-doing assets that don't match the brand", "value": "redoing_assets" }
+      ]
+    },
+    "Q3C": {
+      "question": "What would help you most right now?",
+      "options": [
+        { "label": "One place to generate all website assets", "value": "one_place" },
+        { "label": "AI that's designed specifically for web design", "value": "web_design_ai" },
+        { "label": "Faster path from idea to production-ready visuals", "value": "faster_path" }
+      ]
+    }
+  }
+}

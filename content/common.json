@@ -1,0 +1,24 @@
+{
+  "_instructions": "Edit the text between quotes. Do not change the keys or remove punctuation.",
+
+  "errors": {
+    "invalidEmail": "Please enter a valid email address",
+    "enterEmail": "Please enter your email address",
+    "subscribeFailed": "Failed to subscribe. Please try again.",
+    "genericError": "An error occurred. Please try again."
+  },
+
+  "loading": {
+    "default": "Loading...",
+    "homePage": "Loading...",
+    "analyzingAnswers": "Analyzing your answers..."
+  },
+
+  "progressBar": {
+    "label": "Progress"
+  },
+
+  "questionCard": {
+    "questionCounter": "Question {current} of {total}"
+  }
+}
