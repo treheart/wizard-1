@@ -1,3 +1,4 @@
+
 "use client";
 
 import { Button } from "@/components/ui/button";
@@ -289,7 +290,7 @@ function ResultsContent() {
                 <div className="hidden md:flex shrink-0 justify-end">
                   {/* eslint-disable-next-line @next/next/no-img-element */}
                   <img
-                    src={wizardImage}
+                    src={"/acheivement.jpeg"}
                     alt="Wizard character"
                     width={140}
                     height={140}
@@ -307,7 +308,7 @@ function ResultsContent() {
               <div className="w-full h-80 flex items-center justify-center">
                 <ResponsiveContainer width="100%" height="100%">
                   <RadarChart data={capabilityData}>
-                    <PolarGrid stroke="#e5e7eb" />
+                    <PolarGrid stroke="#FA709AFF" />
                     <PolarAngleAxis
                       dataKey="subject"
                       tick={{ fill: '#6b7280', fontSize: 12 }}
@@ -316,8 +317,8 @@ function ResultsContent() {
                     <Radar
                       name="Capability"
                       dataKey="value"
-                      stroke="#38b6ff"
-                      fill="#38b6ff"
+                      stroke="#FA709AFF"
+                      fill="#FA709AFF"
                       fillOpacity={0.3}
                       strokeWidth={2}
                     />
@@ -335,7 +336,7 @@ function ResultsContent() {
                 {personalizedInsights.map((insight, index) => (
                   <div
                     key={index}
-                    className="flex items-start gap-3 p-3 md:p-4 bg-gray-50 rounded-xl opacity-0 animate-fade-in-up"
+                    className="flex items-start gap-3 p-3 md:p-4 bg-primary/10 rounded-xl opacity-0 animate-fade-in-up"
                     style={{
                       animationDelay: `${0.2 + index * 0.1}s`,
                       animationFillMode: "forwards",
@@ -369,7 +370,7 @@ function ResultsContent() {
                       value={inputEmail}
                       onChange={handleEmailChange}
                       className={`h-12 bg-white text-black border-[3px] rounded-xl placeholder:text-gray-400 focus-visible:ring-0 ${
-                        emailError ? "border-red-500" : "border-black focus-visible:border-black"
+                        emailError ? "border-red-500" : "border-white focus-visible:border-white"
                       }`}
                     />
                     {emailError && (
@@ -383,7 +384,7 @@ function ResultsContent() {
                 <Button
                   onClick={handleGetLearningPath}
                   disabled={isLoading || isSubscribingOnly || !email}
-                  className="w-full sm:w-auto h-12 md:h-14 px-8 md:px-12 text-base md:text-lg font-bold bg-white text-primary hover:bg-gray-100 transition-all hover:scale-[1.02] active:scale-[0.98] disabled:opacity-50"
+                  className="w-full sm:w-auto h-12 md:h-14 px-8 md:px-12 text-base md:text-lg font-bold bg-[#e6c510] text-white hover:bg-[#e6c510]/80 transition-all hover:scale-[1.02] active:scale-[0.98] disabled:opacity-90"
                 >
                   {isLoading ? resultsContent.labels.loadingButton : resultsContent.labels.getLearningPathButton}
                 </Button>

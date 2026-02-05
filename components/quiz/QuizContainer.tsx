@@ -140,7 +140,7 @@ export function QuizContainer() {
                 loop
                 className="w-48 h-48 md:w-64 md:h-64"
               >
-                <source src="/videos/thinking.mp4" type="video/mp4" />
+                <source src="/thinking.mp4" type="video/mp4" />
               </video>
               <p className="text-lg font-medium text-gray-700 animate-pulse">
                 {commonContent.loading.analyzingAnswers}

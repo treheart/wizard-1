@@ -120,9 +120,9 @@ export async function POST(request: NextRequest) {
             // Individual answers for segmentation
             ...(answers
               ? Object.entries(answers).map(([questionId, value]) => ({
-                  name: `answer_${questionId.toLowerCase()}`,
-                  value: getAnswerLabel(questionId, value),
-                }))
+                name: `answer_${questionId.toLowerCase()}`,
+                value: getAnswerLabel(questionId, value),
+              }))
               : []),
             // Also store raw answers as JSON for reference
             ...(answers ? [{ name: "quiz_answers_raw", value: JSON.stringify(answers) }] : []),
