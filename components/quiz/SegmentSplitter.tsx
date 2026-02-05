@@ -15,7 +15,7 @@ export function SegmentSplitter({ firstName, onSelect }: SegmentSplitterProps) {
   const question = segmentSplitterQuestion.question.replace("{name}", firstName);
 
   return (
-    <Card className="w-full border-[3px] border-black rounded-[25px] shadow-none bg-white">
+    <Card className="w-full border-[3px] border-[#222222FF] rounded-[25px] shadow-none bg-white">
       <CardContent className="p-6 md:p-8">
         <div className="space-y-6">
           <h2 className="text-lg md:text-xl font-bold text-center leading-tight">

@@ -30,7 +30,7 @@ function LoadingScreen({ progress, message }: { progress: number; message: strin
           playsInline
           className="w-full h-full object-cover"
         >
-          <source src="/videos/loading_0.mp4" type="video/mp4" />
+          <source src="/thinking.mp4" type="video/mp4" />
         </video>
       </div>
       <p className="text-lg md:text-xl text-gray-700 mb-8 text-center animate-pulse">
@@ -40,7 +40,7 @@ function LoadingScreen({ progress, message }: { progress: number; message: strin
         <div className="h-3 bg-gray-200 rounded-full overflow-hidden">
           <div
             className="h-full rounded-full transition-all duration-300 ease-out"
-            style={{ width: `${progress}%`, backgroundColor: '#38b6ff' }}
+            style={{ width: `${progress}%`, backgroundColor: '#FA709AFF' }}
           />
         </div>
         <p className="text-center text-gray-500 mt-3 font-medium">{progress}%</p>
@@ -207,16 +207,16 @@ function LearningPathContent() {
     <div className="min-h-screen bg-white">
       {/* Fixed Countdown Header */}
       <div className="fixed top-0 left-0 right-0 z-50">
-        <div className="text-black py-5 md:py-6 px-6" style={{ backgroundColor: '#38b6ff' }}>
+        <div className="text-black py-5 md:py-6 px-6" style={{ backgroundColor: '#FA709AFF' }}>
           <div className="relative flex items-center justify-center max-w-7xl mx-auto">
             <div className="flex items-center gap-3">
-              <ClockIcon className="w-6 h-6 stroke-[2.5]" />
-              <span className="text-base md:text-lg font-bold">{learningPathContent.timer.label}</span>
-              <span className="text-xl md:text-2xl font-black"><CountdownTimer /></span>
+              <ClockIcon className="w-6 h-6 text-white stroke-[2.5]" />
+              <span className="text-base text-white md:text-lg font-bold">{learningPathContent.timer.label}</span>
+              <span className="text-xl text-white md:text-2xl font-black"><CountdownTimer /></span>
             </div>
             <Button
               onClick={() => window.open(COURSE_URLS[(decodeQuizData(searchParams.get("id") || "").path as keyof typeof COURSE_URLS) || "A"], '_blank')}
-              className="absolute right-0 bg-black hover:bg-gray-900 text-white font-bold h-10 px-6 text-sm rounded-lg"
+              className="absolute right-0 bg-[#e6c510] hover:bg-[#e6c510]/80 text-white font-bold h-10 px-6 text-sm rounded-lg"
             >
               {learningPathContent.timer.button}
             </Button>
@@ -247,7 +247,7 @@ function LearningPathContent() {
         {/* Focus & Goal Cards */}
         <div className="grid grid-cols-2 w-full gap-3 md:gap-4 pt-6 lg:pt-8">
           <div
-            className="bg-gray-50 rounded-xl p-4 border border-gray-200 opacity-0 animate-fade-in-up"
+            className="bg-primary/10 rounded-xl p-4 border border-primary/20 opacity-0 animate-fade-in-up"
             style={{ animationDelay: "0.1s", animationFillMode: "forwards" }}
           >
             <div className="flex items-center gap-2 mb-1">
@@ -257,7 +257,7 @@ function LearningPathContent() {
             <p className="font-semibold">{content.focus}</p>
           </div>
           <div
-            className="bg-gray-50 rounded-xl p-4 border border-gray-200 opacity-0 animate-fade-in-up"
+            className="bg-primary/10 rounded-xl p-4 border border-primary/20 opacity-0 animate-fade-in-up"
             style={{ animationDelay: "0.15s", animationFillMode: "forwards" }}
           >
             <div className="flex items-center gap-2 mb-1">
@@ -329,7 +329,7 @@ function LearningPathContent() {
               <div className="grid md:grid-cols-3 gap-4">
                 {content.achievements.map((achievement, index) => (
                   <div key={index} className="flex items-center gap-3">
-                    <div className="w-6 h-6 rounded-full flex items-center justify-center shrink-0" style={{ backgroundColor: '#38b6ff' }}>
+                    <div className="w-6 h-6 rounded-full flex items-center justify-center shrink-0 bg-primary" >
                       <CheckIcon className="w-4 h-4 text-white" />
                     </div>
                     <p className="font-medium">{achievement}</p>
@@ -346,7 +346,7 @@ function LearningPathContent() {
           style={{ animationDelay: "0.3s", animationFillMode: "forwards" }}
         >
           <p className="text-sm text-muted-foreground mb-2">{learningPathContent.labels.basedOnQuizResults}</p>
-          <div className="inline-block px-4 py-2 bg-gray-100 rounded-full">
+          <div className="inline-block px-4 py-2 bg-primary/10 rounded-full">
             <span className="font-semibold">{learningPathContent.labels.yourBottleneck} </span>
             <span className="text-primary">{result.title}</span>
           </div>
@@ -387,8 +387,8 @@ function LearningPathContent() {
 
                 <Button
                   onClick={() => window.open(COURSE_URLS[path as keyof typeof COURSE_URLS], '_blank')}
-                  className="w-full h-14 text-lg text-white hover:opacity-90 font-bold"
-                  style={{ backgroundColor: '#38b6ff' }}
+                  className="w-full h-14 text-lg text-white hover:opacity-90 font-bold bg-primary"
+                  // style={{ backgroundColor: '#38b6ff' }}
                 >
                   {content.pricing?.buttonText || learningPathContent.timer.button}
                 </Button>
@@ -447,8 +447,8 @@ function LearningPathContent() {
 
         {/* Final CTA */}
         <Card
-          className="w-full mt-14 border-[3px] rounded-[25px] shadow-none text-white overflow-hidden opacity-0 animate-fade-in-up"
-          style={{ animationDelay: "0.6s", animationFillMode: "forwards", backgroundColor: '#38b6ff', borderColor: '#38b6ff' }}
+          className="w-full mt-14 border-[3px] border-[#fb4e82] rounded-[25px] shadow-none text-white overflow-hidden opacity-0 animate-fade-in-up bg-primary"
+          style={{ animationDelay: "0.6s", animationFillMode: "forwards", }}
         >
           <CardContent className="p-8 md:p-12 text-center space-y-6">
             <p className="text-2xl md:text-3xl font-bold">
@@ -461,8 +461,8 @@ function LearningPathContent() {
               <Button
                   onClick={() => window.open(COURSE_URLS[path as keyof typeof COURSE_URLS], '_blank')}
                   variant="outline"
-                  className="w-full sm:w-auto h-14 px-12 text-lg font-bold bg-white border-white hover:bg-gray-100"
-                  style={{ color: '#38b6ff' }}
+                  className="w-full sm:w-auto h-14 px-12 text-lg font-bold bg-[#e6c510] border-[#e6c510] hover:bg-[#e6c510]/80 hover:text-white"
+                  // style={{ color: '#38b6ff' }}
                 >
                   {learningPathContent.finalCta.button}
                 </Button>

@@ -2,10 +2,10 @@
   "_instructions": "Edit the text between quotes. Use {name} where you want the user's name to appear. Do not change the keys (words before colons) or remove any punctuation.",
 
   "nameInput": {
-    "heading": "Before we start — what should we call you?",
+    "heading": "Before we start — what is your name?",
     "label": "First name:",
     "placeholder": "Enter your first name",
-    "button": "Find My Invisible Wall"
+    "button": "Find My Problem"
   },
 
   "segmentSplitter": {
