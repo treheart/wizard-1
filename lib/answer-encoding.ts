@@ -93,7 +93,11 @@ export function decodeQuizData(encoded: string): {
       utf8Bytes[i] = binaryString.charCodeAt(i);
     }
     const data = new TextDecoder().decode(utf8Bytes);
-    const [name, pathRaw, answerIndices, email] = data.split(".");
+    const parts = data.split(".");
+    const name = parts[0];
+    const pathRaw = parts[1];
+    const answerIndices = parts[2];
+    const email = parts.slice(3).join(".") || "";
 
     // Validate path is one of the allowed values
     const validPaths: Path[] = ["A", "B", "C"];
