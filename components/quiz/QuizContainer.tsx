@@ -35,12 +35,34 @@ export function QuizContainer() {
     setState((prev) => ({ ...prev, email, ref }));
   }, [searchParams]);
 
-  const handleNameSubmit = (name: string) => {
-    setState((prev) => ({ ...prev, firstName: name }));
+  const handleNameSubmit = (name: string, email: string) => {
+    setState((prev) => ({ ...prev, firstName: name, email }));
     setStep("segment");
   };
 
-  const handlePathSelect = (path: Path) => {
+  const INTAKE_ANSWER_BY_PATH: Record<Path, string> = {
+    A: "beginner",
+    B: "solo operator",
+    C: "experience designer",
+  };
+
+  const handlePathSelect = async (path: Path) => {
+    const answer = INTAKE_ANSWER_BY_PATH[path];
+    const email = state.email || "";
+    const name = state.firstName || "";
+
+    if (email && name) {
+      try {
+        await fetch("/api/intake", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ email, name, answer }),
+        });
+      } catch {
+        // Fire-and-forget; don't block quiz flow
+      }
+    }
+
     setState((prev) => ({ ...prev, selectedPath: path, currentStep: 0 }));
     setStep("questions");
   };
@@ -112,7 +134,12 @@ export function QuizContainer() {
 
         {/* Quiz Steps with animations */}
         <div key={animationKey} className="animate-fade-in-up">
-          {step === "name" && <NameInput onSubmit={handleNameSubmit} />}
+          {step === "name" && (
+            <NameInput
+              initialEmail={state.email}
+              onSubmit={handleNameSubmit}
+            />
+          )}
 
           {step === "segment" && (
             <SegmentSplitter

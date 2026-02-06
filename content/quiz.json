@@ -5,6 +5,8 @@
     "heading": "Before we start — what is your name?",
     "label": "First name:",
     "placeholder": "Enter your first name",
+    "emailLabel": "Email:",
+    "emailPlaceholder": "Enter your email",
     "button": "Find My Problem"
   },
 
